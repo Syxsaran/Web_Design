@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    z-index: 900; /* ค่า z-index ต่ำกว่า */
+}
+
+nav {
+    background-color: #727272;
+}
+
+h2{
+    color: #007bff;
+    text-align: center;
+}
+
+h3{
+    color: #434b4b;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+/* ... CSS อื่น ๆ ... */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* แบ่งเป็น 2 คอลัมน์ */
+    gap: 20px; /* ระยะห่างระหว่าง card */
+    justify-content: center; /* จัด card อยู่ตรงกลางแนวนอน */
+}
+
+
+div[name="card1"] {
+    width: 60%; /* กำหนดความกว้างของ card */
+    max-width: 100%; /* กำหนดความกว้างสูงสุดของ card เพื่อให้มันปรับขนาดตามขนาดหน้าจอเล็กสุด */
+    margin: auto;
+    /* อื่น ๆ ตามความต้องการของคุณ */
+}
+
+.carousel-item img {
+    max-width: 70%; /* ลดขนาดรูปให้ไม่เกินความกว้างของ parent element */
+    height: auto; /* ให้รูปปรับสัดส่วนตามความกว้าง */
+    margin: auto;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar li a.dropdown-toggle {
+    color: #fff; /* สีข้อความที่คุณต้องการให้เป็นสีขาว */
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+/* เพิ่มสไตล์ให้กับเมนูเมื่อติดตามหน้าจอ */
+nav.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #444;
+    z-index: 100; /* เพื่อให้เป็นหน้าสูงสุด */
+}
+
+nav.sticky ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav.sticky li {
+    margin: 10px;
+}
+
+nav.sticky a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+/* CSS สำหรับรายการติดต่อ */
+.contact-list {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-list img {
+    width: 32px; /* ปรับขนาดของไอคอนตามความเหมาะสม */
+    height: 32px;
+    margin-right: 10px; /* ระยะห่างระหว่างไอคอนกับข้อความ */
+}
+
+.contact-list span {
+    font-size: 16px; /* ปรับขนาดข้อความตามความเหมาะสม */
+}
+
+.table {
+    width: 40%; /* กำหนดความกว้างของตารางเป็น 50% ของพื้นที่ที่ตัวแม่ครอบมี */
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+}
+#fixed-menu {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #535252;
+    z-index: 1000;
+}
+
+
